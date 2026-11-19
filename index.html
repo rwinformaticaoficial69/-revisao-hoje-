@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>RW Informática - Suporte e Manutenção</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header>
+    <h1>RW Informática & Tecnologia</h1>
+  </header>
+  
+  <main>
+    <section class="cartao">
+      <h2>Sobre este Projeto</h2>
+      
+      <div class="area-imagem">
+        <!-- PASSO 1: Descrição da imagem para leitores de tela -->
+        <img 
+          src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400" 
+          alt="Bancada de assistência técnica com placas de circuito impresso, ferramentas de precisão e componentes de computador iluminados por luz azulada" 
+          class="foto-destaque"
+        >
+      </div>
+      
+      <p>Especializada em manutenção de computadores, formatação avançada, montagem de workstations de alto desempenho e suporte técnico corporativo e residencial.</p>
+      
+      <h3>Destaques</h3>
+      <ul>
+        <li>Diagnóstico rápido e orçamento transparente</li>
+        <li>Otimização de hardware e SSDs de alta velocidade</li>
+        <li>Suporte especializado em Windows 11 e redes</li>
+      </ul>
+      
+      <form>
+        <h3>Formulário de Solicitação de Suporte</h3>
+        
+        <p>
+          <label for="nome-usuario">Seu Nome:</label>
+          <!-- PASSO 2 (Parte A): Adicionado o atributo required -->
+          <input type="text" id="nome-usuario" minlength="3" required aria-describedby="dica-nome">
+          <small id="dica-nome">Digite pelo menos 3 letras.</small>
+        </p>
+        
+        <p>
+          <!-- PASSO 3: Ligado ao input via for e id corretos -->
+          <label for="email-usuario">Seu E-mail:</label>
+          <input type="email" id="email-usuario" required>
+        </p>
+        
+        <fieldset>
+          <legend>Escolha UMA opção (Radio):</legend>
+          <input type="radio" id="op1" name="escolha" value="suporte-presencial">
+          <label for="op1">Suporte Presencial (Curitiba e Região)</label><br>
+          <input type="radio" id="op2" name="escolha" value="suporte-remoto">
+          <label for="op2">Suporte Remoto</label>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Marque quantas opções quiser (Checkbox):</legend>
+          <input type="checkbox" id="check1" name="extras" value="limpeza">
+          <label for="check1">Limpeza interna e troca de pasta térmica</label><br>
+          <input type="checkbox" id="check2" name="extras" value="backup">
+          <label for="check2">Backup e recuperação de dados</label>
+        </fieldset>
+        
+        <!-- PASSO 2 (Parte B): Adicionado type="submit" para identificar o botão de envio -->
+        <button type="submit">Enviar Solicitação</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Exercício de Revisão - Feito em aula | RW Informática</p>
+  </footer>
+</body>
+</html>
